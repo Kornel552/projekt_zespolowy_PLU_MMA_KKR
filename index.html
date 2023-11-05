@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wroclawskie Skupy Zlomu</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name='author' conntent="">
+    <meta name='keywords' content="Strona poswiecona wyszukiwaniom skupow zlomu we Wroclawiu">
+    <meta name='decription' content="">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" media='screen and (min-width: 576px)' href="css/small.css">
+    <link rel="stylesheet" media='screen and (min-width: 768px)' href="css/medium.css">
+    <link rel="stylesheet" media='screen and (min-width: 992px)' href="css/large.css">
+    <script src="https://kit.fontawesome.com/ffb7f605c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+    <nav class="navbar navbar-expand-lg fixed-top" id='navbar'>
+        <a class="navbar-brand" href="#">
+            <span class="text-warning font-weight-bold">W</span>
+            <span class="text-dark font-weight-bold">S</span>
+            <span class="text-danger font-weight-bold">Z</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="#home">Strona Główna</a>
+                <a class="nav-item nav-link" href="#aboutus">O Stronie</a>
+                <a class="nav-item nav-link" href="#offert">Cennik</a>
+                <a class="nav-item nav-link" href="#galery">Galeria Skupów</a>
+                <a class="nav-item nav-link" href="#best">Najlepiej Oceniane</a>
+                <a class="nav-item nav-link" href="#map">Mapa Skupów</a>
+                <!-- <a class='languageIcon' href="index.html"><img src="./img/polish.png" alt=""></a> -->
+                <!-- <a class='languageIcon' href="en-index.html"><img src="./img/english.png" alt=""></a> -->
+            </div>
+        </div>
+    </nav>
+    <header id="home">
+        <div class="hero-image">
+            <div class="hero-shadow"></div>
+            <div class="hero-text os-animation visibility" data-animation="zoomIn" data-delay=".3s">
+                <p class="text-white">Strona poświęcona</p>
+                <p class="text-white font-weight-bold">Wrocławskim Skupom Złomu</p>
+            </div>
+            <a href="#aboutus" class=''><i class="fa fa-chevron-down "></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="aboutus">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="wrapper">
+                    
+                    <h2 class=" os-animation visibility" data-animation="fadeIn" data-delay=".1s">O Stronie</h2>
+                    <div class="under-line os-animation visibility" data-animation="fadeIn" data-delay=".2s"></div>
+                    <div class="about-text os-animation visibility" data-animation="fadeIn" data-delay=".3s">
+                        <p class="title">WSK
+                        </p>
+                        <p>Strona ta ma pomóc Wam w odnalezieniu najlepszego i oferujacego najlepsze ceny skupu złomu we Wrocławiu</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="offert" class="scroll-fix">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="hero-shadow-offert"></div>
+                <div class="wrapper"></div>
+                <h1 class="os-animation text-white" data-animation="fadeIn" data-delay=".1s">Cennik</h1>
+                <div class="under-line-offert os-animation visibility" data-animation="fadeIn" data-delay=".1s"></div>
+                <div id="flsk-content" class="row"></div>
+            </div>
+        </section>
+        <section id="galery" class="scroll-fix">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="wrapper">
+                    <h2>Galeria Skupów</h2>
+                    <div class="under-line-offert"></div>
+                    <div class="row">
+                        <a href="" data-lightbox="roadtrip" class="col"><img src=""
+                                alt=""></a>
+                        <a href="" data-lightbox="roadtrip" class="col"><img src=""
+                                alt=""></a>
+                        <a href="" data-lightbox="roadtrip" class="col"><img src=""
+                                alt=""></a>
+                        <a href="" data-lightbox="roadtrip" class="col"><img src=""
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="best" class="scroll-fix">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="best-shadow"></div>
+                <h2>Najlepiej Oceniane</h2>
+                <div class="under-line-offert"></div>
+                <div class="card-deck wrapper">
+                    <div class="card">
+                        <i class="fas fa-users card-img-top"></i>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"><i class="fas fa-phone-alt"></i><a href="tel:"></a></p>
+                            <p class="card-text"><i class="fas fa-envelope"></i></i><a
+                                    href="mailto:"></a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-users card-img-top"></i>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"><i class="fas fa-phone-alt"></i><a href="tel:"> </a></p>
+                            <p class="card-text"><i class="fas fa-envelope"></i>><a href="mailto: "></a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-users card-img-top"></i>
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;"></h5>
+                            <h5 class="card-title" style="text-align: center;"></h5>
+                            <p class="card-text"><i class="fas fa-phone-alt"></i><a href=""></a></p>
+                            <p class="card-text"><i class="fas fa-envelope"></i><a href="mailto:"></a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-users card-img-top"></i>
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;"></h5>
+                            <h5 class="card-title" style="text-align: center;"></h5>
+                            <p class="card-text""><i class=" fas fa-phone-alt"></i><a href="tel:"> </a></p>
+                            <p class="card-text"><i class="fas fa-envelope"></i><a href="">
+                                    </a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.4958563467344!2d17.028573100000003!3d51.0993109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc337f5bea241%3A0xef3a4ea81f320900!2sFlyingAtom%20Gold%20-%20z%C5%82oto%2C%20srebro%2C%20diamenty%20inwestycyjne!5e0!3m2!1spl!2spl!4v1699134739039!5m2!1spl!2spl" width="265" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></i>
+                        <div class="card-body">
+                            <h5 class="card-title">FlyingAtom Gold</h5>
+                            <h8 class="card-title">Powstańców Śląskich 2-4/p.9 lok.19</h8>
+                            <p class="card-text "><i class="fas fa-phone-alt"></i><a href="tel:886900450"> 886 900 450</a></p>
+                            <p class="card-text "><i class="fas fa-envelope"></i><a
+                                    href="https://flyingatom.gold/">
+                                    https://flyingatom.gold/</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="map" class="scroll-fix">
+            <h2>Mapa Skupów</h2>
+            <div class="mapa"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d56676.4783027723!2d16.99483801801091!3d51.11270113074568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zc2t1cCB6xYJvdGEgd3JvY8WCYXc!5e0!3m2!1spl!2spl!4v1699134274824!5m2!1spl!2spl"
+                    frameborder="0" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; 2023 </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'positionFromTop': 160,
+        })
+    </script>
+    <script src="./js/jquery.waypoints.min"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- <script src="./js/api.js"></script> -->
+</body>
+
+</html>
