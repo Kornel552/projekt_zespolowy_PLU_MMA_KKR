@@ -148,8 +148,17 @@ header .fa-chevron-down {
   display: none;
 }
 
+
+#aboutus .ostronie-podpis{
+  text-align: right;
+}
+
 .about-text p.title {
   padding-top: 15px;
+}
+
+#tips{
+  background-color: bisque;
 }
 
 #offert .jumbotron {
