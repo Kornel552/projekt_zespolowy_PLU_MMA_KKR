@@ -164,7 +164,6 @@ header .fa-chevron-down {
 #offert .jumbotron {
   position: relative;
   padding: 0;
-  background-image: url("../img/Photo by Goh Rhy Yan on Unsplash.jpg");
   background-position: center;
   background-size: cover;
   z-index: 0;
@@ -176,12 +175,12 @@ header .fa-chevron-down {
   font-size: 28px;
 }
 
-#offert .hero-shadow-offert {
+/* #offert .hero-shadow-offert {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   width: 100%;
   height: 100%;
-}
+} */
 
 #offert .about-hero-item {
   margin: 0 auto;
