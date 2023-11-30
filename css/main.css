@@ -254,6 +254,11 @@ header .fa-chevron-down {
   transition: .3s;
 }
 
+#best .card iframe{
+  height: 30%;
+  width: 100%;
+}
+
 #best .card .fa-users {
   padding-top: 10px;
   text-align: center;
