@@ -1,10 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 import requests
 from bs4 import BeautifulSoup
-from flask_cors import CORS  # Importuje CORS
+import json
 
 app = Flask(__name__)
-# CORS(app)
 
 @app.route('/')
 def scrape_and_display():
@@ -18,22 +17,25 @@ def scrape_and_display():
 
         if table:
             data = []
-            rows = table.find_all('tr')  # Usuwamy pomijanie pierwszego wiersza z nagłówkami
+            rows = table.find_all('tr')
 
             for row in rows:
                 columns = row.find_all('td')
-                if len(columns) >= 2:  # Sprawdzamy, czy mamy co najmniej 2 kolumny
-                    material = columns[0].text
-                    cena = columns[1].text
+                if len(columns) >= 2:
+                    material = columns[0].text.strip()
+                    cena = columns[1].text.strip()
                     data.append({'material': material, 'cena': cena})
-                # else:
-                #     data.append({'material': 'Brak danych', 'cena': 'Brak danych'})
         else:
             data = []
 
+        # Zapisz dane do pliku JSON
+        with open('materials_data.json', 'w') as json_file:
+            json.dump(data, json_file)
+
+        # Zwróć dane do szablonu HTML
         return render_template('table.html', data=data)
     else:
         return "Błąd podczas pobierania strony. Kod statusu: " + str(response.status_code)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5051)

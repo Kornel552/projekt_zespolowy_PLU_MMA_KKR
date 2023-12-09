@@ -182,9 +182,25 @@ header .fa-chevron-down {
   height: 100%;
 } */
 
-#offert .about-hero-item {
-  margin: 0 auto;
-  margin-top: 45px;
+/* Styl dla przycisku */
+#offert .btn {
+  display: block;
+  width: 150px; /* szerokość przycisku */
+  margin: auto auto auto auto; /* centrowanie */
+  padding: 10px 20px; /* wewnętrzne marginesy */
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  background-color: #eff0d4; /* kolor tła */
+  border: rgb(3, 3, 3);
+  border-radius: 5px; /* zaokrąglenie krawędzi */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efekt po najechaniu myszką */
+#offert .btn:hover {
+  background-color: #969696;
 }
 
 #offert .row {
