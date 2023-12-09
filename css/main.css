@@ -163,7 +163,7 @@ header .fa-chevron-down {
 
 #offert .jumbotron {
   position: relative;
-  padding: 0;
+  padding: 4% 0;
   background-position: center;
   background-size: cover;
   z-index: 0;
@@ -182,11 +182,15 @@ header .fa-chevron-down {
   height: 100%;
 } */
 
+#offer p {
+  text-align: center;
+}
+
 /* Styl dla przycisku */
 #offert .btn {
   display: block;
   width: 150px; /* szerokość przycisku */
-  margin: auto auto auto auto; /* centrowanie */
+  margin: auto auto; /* centrowanie */
   padding: 10px 20px; /* wewnętrzne marginesy */
   text-align: center;
   text-decoration: none;
@@ -201,23 +205,6 @@ header .fa-chevron-down {
 /* Efekt po najechaniu myszką */
 #offert .btn:hover {
   background-color: #969696;
-}
-
-#offert .row {
-  margin: auto;
-}
-
-#offert .fas {
-  font-size: 30px;
-}
-
-#offert p {
-  font-size: 18px;
-  color: #fac720;
-}
-
-#offert p i {
-  color: #fff;
 }
 
 #formularze a {
